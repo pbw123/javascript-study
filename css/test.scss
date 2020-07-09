@@ -1,0 +1,8 @@
+$red:#000000;
+@mixin font-size{
+  font-size: 100px;
+}
+@mixin love($color,$size){
+  color: $color;
+  font-size: $size;
+}

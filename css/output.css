@@ -1,0 +1,33 @@
+.f {
+  border: black 1px solid;
+}
+
+.one {
+  color: red;
+}
+.one .two {
+  background: yellow;
+}
+.one .two #three {
+  font-size: 20px;
+}
+.one .two #three .four, .one .two #three .six {
+  width: 200px;
+}
+.one .two #three .four-title {
+  height: 20px;
+}
+.one h1, .one h2, .one h3 {
+  font-family: "Adobe Arabic";
+  color: #000000;
+}
+.one .ten {
+  background: yellow;
+}
+.one .six {
+  font-size: 100px;
+  color: green;
+  font-size: 1000px;
+}
+
+/*# sourceMappingURL=output.css.map */

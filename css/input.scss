@@ -1,0 +1,35 @@
+$width:200px;
+@import "test";
+.f{
+  border: black 1px solid;
+}
+.one{
+  color: red;
+  .two {
+    background: yellow;
+    #three
+    {
+      font-size: 20px;
+      .four {
+        width: 200px;
+        &-title{
+          height: 20px;
+        }
+      }
+    }
+  }
+h1,h2,h3{
+  font-family: "Adobe Arabic";
+  color: $red;
+}
+  .ten{
+    background: yellow;
+  }
+  .six{
+    @include font-size;
+    @extend .four;
+    @include love(green,1000px)
+  }
+
+
+}
