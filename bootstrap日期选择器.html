@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap3 datetime picker Template</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="css/moment-with-locales.min.js"></script>
+<script src="css/bootstrap.min.js"></script>
+<script src="css/bootstrap-datepicker.min.js"></script>
+<script src="css/bootstrap-datepicker.zh-CN.min.js"></script>
+<script>
+    $('#datetimepicker1').datepicker({
+        // format : 'dddd YYYY年MM月DD日 HH:mm:ss'
+        language:"zh-CN"
+    });
+</script>
+</body>
+</html>
