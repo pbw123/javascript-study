@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</head>
+<body>
+<input type="text" id="url_link">
+<div id="tip" style="color: red">
+
+</div>
+
+<script>
+    $("#url_link").blur(function () {
+        let input= $("#url_link").val();
+        let patt=/^(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]$/i
+        let input_val=input.trim();
+        if (input == "" || input_val.length == 0) {
+            $("#tip").text("null")
+            return;
+        }
+        if(!patt.test(input_val)){
+            $("#tip").text("输入正确的链接")
+
+        }else{
+            $("#tip").text("")
+        }
+
+    });
+</script>
+</body>
+</html>

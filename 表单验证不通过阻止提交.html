@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+
+</head>
+<body>
+<form action="/js/上传图片.html">
+<!--    <textarea type="text" id="username"></textarea>-->
+    <textarea id="content" name="txt" type="text/plain"></textarea>
+
+    <input type="button" value="submit" id="submit" onclick="test()">
+</form>
+
+<script>
+    function test() {
+        // var innerText = document.getElementById("username").value;
+        // console.log("文本内容："+innerText)
+        let content = document.getElementById("content").value;
+        console.log("内容："+content)
+    }
+    $("form").submit(function(){
+        // console.log($("#username").val())
+
+        // if($("#username").val() == "") {
+        //     alert("名称不能为空");
+        //     return false;
+        // }
+    });
+    // $("#username").blur(function () {
+    //     if($("#username").val() == "") {
+    //         alert("名称不能为空");
+    //         return false;
+    //     }
+    // })
+</script>
+
+</body>
+</html>
